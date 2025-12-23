@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#profilePic {
+    width: 32px;
+    height: 32px;
+    background-image: url("./assets/profile.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+}
+
+.notiIcon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: all 0.08s ease-in-out;
+    cursor: pointer;
+    margin: 0px 10px;
+}
+
+.notiIcon:hover, .createBtn:hover {
+    background-color: #3f3f3f;
+}
+
+.createBtn {
+    color: white;
+    background-color: #272727;
+    width: 98px;
+    height: 40px;
+    font-size: 15px;
+    vertical-align: center;
+    border-radius: 50px;
+    transition: all 0.08s ease-in-out;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+nav, .navDiv3, .navDiv2, .navDiv1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav {
+    padding: 10px 30px 10px 25px;
+}
+
+header {
+    position: fixed;
+    width: 100vw;
+}
+
+.logo {
+    margin-left: 20px;
+}
+
+#searchInput {
+    color: white;
+    background-color: #121212;
+    width: 515px;
+    height: 40px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border: 1px solid #303030;
+    padding: 0px 15px;
+}
+
+#searchInput:focus {
+    margin-right: 1px;
+    outline: 1px solid;
+    outline-color: #065fd4;
+}
+
+#searchBtn {
+    background-color: #2e3338;
+    width: 64px;
+    height: 40px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    cursor: pointer;
+}
+
+.searchDiv {
+    display: flex;
+    align-items: center;
+}
+
+.leftBar {
+    height: 100vh;
+    width: 70px;
+    position: fixed;
+    top: 60px;
+    left: 5px;
+}
+
+.leftBarBtn {
+    color: white;
+    font-size: 10px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 64px;
+    height: 74px;
+    padding: 16px 0px;
+    border-radius: 10px;
+}
+
+.leftBarBtn:hover {
+    background-color: #272727;
+}
+
+.leftBarBtn > p {
+    position: relative;
+    top: 5px;
+}
+
+.navStrip {
+    color: white;
+    margin: 10px 0px 0px 100px;
+    display: flex;
+    gap: 12px;
+    /* width: max-content; */
+    overflow: auto;
+}
+
+.navStrip::-webkit-scrollbar {
+    display: none;
+}
+
+.navStripBtns {
+    flex: 0 0 fit-content;
+    background-color: #272727;
+    cursor: pointer;
+    padding: 4px 10px;
+    border-radius: 8px;
+}
+
+.selectedNavStripBtn {
+    color: black;
+    background-color: white;
+}
