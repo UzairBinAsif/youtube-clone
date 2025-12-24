@@ -28,7 +28,7 @@ html {
 }
 
 .notiIcon:hover, .createBtn:hover {
-    background-color: #3f3f3f;
+    background-color: #3f3f3f !important;
 }
 
 .createBtn {
@@ -58,11 +58,15 @@ nav {
 
 header {
     position: fixed;
+    top: 0px;
     width: 100vw;
+    z-index: 2;
+    background-color: #0f0f0f;
 }
 
 .logo {
     margin-left: 20px;
+    cursor: pointer;
 }
 
 #searchInput {
@@ -102,6 +106,7 @@ header {
     position: fixed;
     top: 60px;
     left: 5px;
+    z-index: 2;
 }
 
 .leftBarBtn {
@@ -128,10 +133,9 @@ header {
 
 .navStrip {
     color: white;
-    margin: 10px 0px 0px 100px;
+    margin: 10px 0px 15px 100px;
     display: flex;
     gap: 12px;
-    /* width: max-content; */
     overflow: auto;
 }
 
@@ -150,4 +154,85 @@ header {
 .selectedNavStripBtn {
     color: black;
     background-color: white;
+}
+
+#navNextBtn {
+    background-color: black;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    transition: all 0.08s ease-in-out;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 69px;
+}
+
+#navNextBtn:hover {
+    background-color: #3f3f3f;
+}
+
+.firstSec {
+    margin: 110px 0 0 100px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    max-width: 710px;
+    width: 31%;
+    cursor: pointer;
+    color: #aaaaaa;
+    transition: all 0.2s ease-in-out;
+    border-radius: 15px;
+    margin: 25px 8px;
+}
+
+.card:hover {
+    background-color: #272727;
+    padding: 10px;
+}
+
+.thumbImgs {
+    border-radius: 15px;
+    object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.cardDesc {
+    display: flex;
+    margin-top: 10px;
+}
+
+.cardDesc > div > img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+}
+
+.cardDesc > :first-child {
+    width: 15%;
+}
+
+.cardDesc > :last-child > :first-child {
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.timeBox {
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    padding: 0px 4px;
+    position: absolute;
+    right: 2%;
+    bottom: 2%;
+    transition: all 0.1s ease-in-out;
+}
+
+.card:hover .timeBox {
+    opacity: 0;
+    visibility: hidden;
 }
